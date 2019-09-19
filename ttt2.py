@@ -16,7 +16,7 @@ def setplayer():
     player1 = ''
     player2 = ''
     while player1 == '' and player2 == '':
-        ques = input('Player1, do you want to be X or O?').upper()
+        ques = input('Player1, do you want to be X or O? ').upper()
         if ques == 'X':
             player1 = 'X'
             player2 = 'O'
@@ -37,25 +37,25 @@ def game():
     while True:
         try:
             if x == o:
-                ques = int(input('Player1, choose a number between 1-9 or 11 to quit \n'))
+                ques = int(input('Player1, choose a number between 1-9 or 11 to quit \n '))
                 if ques <= 9 and ques >= 1:
                     check = (ques - 1)
                     if project_board[check] == ' ':
                         project_board[check] = player1
                         x += 1
                     else:
-                        print(f'{player2} is already in that location! Try another.')
+                        print(f'{player2} is already in that location! Try another. ')
                         continue
 
                 elif ques == 11:
                      print(quit())
                      break
                 else:
-                    print('Please choose a number between 1-9 or 11 to quit')
+                    print('Please choose a number between 1-9 or 11 to quit ')
                     continue
 
             else:
-                ques = int(input('Player2, choose a number between 1-9 or 11 to quit \n'))
+                ques = int(input('Player2, choose a number between 1-9 or 11 to quit \n '))
                 if ques <= 9 >= 1:
                     check = (ques - 1)
                     if project_board[check] == ' ':
@@ -70,7 +70,7 @@ def game():
                      break
                 
                 else:
-                    print('Please choose a number between 1-9 or 11 to quit')
+                    print('Please choose a number between 1-9 or 11 to quit ')
                     continue
                     
 
@@ -104,7 +104,6 @@ def game():
             break
         elif ' ' not in project_board:
             winner = 'Nobody won. Tie game!'
-            print('Nobody won. Tie game!')
             break
         printboard()
     printboard()

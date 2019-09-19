@@ -52,7 +52,7 @@ def game():
                 ques = int(input('Player1, choose a number between 1-9 or 11 to quit \n '))
                 if ques <= 9 and ques >= 1:
                     check = (ques - 1)
-                    if project_board[check] == player2:
+                    if project_board[check] == player2 or project_board[check] == player1:
                         print(f'{player2} is already in that location! Try another. ')
                         continue
 
@@ -72,7 +72,7 @@ def game():
                 ques = int(input('Player2, choose a number between 1-9 or 11 to quit \n '))
                 if ques <= 9 >= 1:
                     check = (ques - 1)
-                    if project_board[check] == player1:
+                    if project_board[check] == player1 or project_board[check] == player2:
                         print(f'{player1} is already in that location! Try another. ')
                         continue
 

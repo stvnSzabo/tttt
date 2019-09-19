@@ -59,9 +59,7 @@ def game():
                     elif project_board[check] == '1' or '2' or '3' or '4' or '5' or '6' or '7' or '8' or '9':
                         project_board[check] = player1
                         x += 1
-                    #else:
-                     #   print(f'{player2} is already in that location! Try another. ')
-                      #  continue
+               
 
                 elif ques == 11:
                      print(quit())
@@ -81,9 +79,7 @@ def game():
                     elif project_board[check] == '1' or '2' or '3' or '4' or '5' or '6' or '7' or '8' or '9':
                         project_board[check] = player2
                         x -= 1
-                    #else:
-                    #    print(f'{player1} is already in that location! Try another.')
-                    #    continue
+                
 
                 elif ques == 11:
                      print(quit())

@@ -53,7 +53,7 @@ def game():
                 if ques <= 9 and ques >= 1:
                     check = (ques - 1)
                     if project_board[check] == player2 or project_board[check] == player1:
-                        print(f'{player2} is already in that location! Try another. ')
+                        print('A player is already in that location! Try another. ')
                         continue
 
                     elif project_board[check] == '1' or '2' or '3' or '4' or '5' or '6' or '7' or '8' or '9':
@@ -73,7 +73,7 @@ def game():
                 if ques <= 9 >= 1:
                     check = (ques - 1)
                     if project_board[check] == player1 or project_board[check] == player2:
-                        print(f'{player1} is already in that location! Try another. ')
+                        print('A player is already in that location! Try another. ')
                         continue
 
                     elif project_board[check] == '1' or '2' or '3' or '4' or '5' or '6' or '7' or '8' or '9':

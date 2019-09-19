@@ -2,7 +2,7 @@ project_board = [' ',' ',' ',' ',' ',' ',' ',' ',' ']
 
 
 def printboard():
-
+    print('\n'*2)
     print(project_board[0] + '|' + project_board[1] + '|' + project_board[2])
     print('- - -')
     print(project_board[3] + '|' + project_board[4] + '|' + project_board[5])
@@ -75,6 +75,7 @@ def game():
         except ValueError:
             print('Please choose a number between 1-9')
             continue
+        
         if project_board[0] == project_board[1] == project_board[2] and project_board[0] != ' ':
             winner = f'{project_board[0]} is the winner!'
             break

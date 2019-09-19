@@ -118,7 +118,7 @@ def game():
         elif project_board[1] == project_board[4] == project_board[7] and project_board[1] != '2':
             winner = f'{project_board[1]} is the winner!'
             break
-        elif '1' and '2' and '3' and '4' and '5' and '6' and '7' and '8' and '9' not in project_board:
+        elif '1' not in project_board and '2' not in project_board and '3' not in project_board and '4' not in project_board and '5' not in project_board and '6' not in project_board and '7' not in project_board and '8' not in project_board and '9' not in project_board:
             winner = 'Nobody won. Tie game!'
             break
         printboard()

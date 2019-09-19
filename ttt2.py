@@ -3,11 +3,11 @@ project_board = [' ',' ',' ',' ',' ',' ',' ',' ',' ']
 
 def printboard():
     print('\n'*2)
-    print(project_board[0] + '|' + project_board[1] + '|' + project_board[2])
-    print('- - -')
-    print(project_board[3] + '|' + project_board[4] + '|' + project_board[5])
-    print('- - -')
-    print(project_board[6] + '|' + project_board[7] + '|' + project_board[8])
+    print(project_board[0] + ' | ' + project_board[1] + ' | ' + project_board[2])
+    print('-- --- ---')
+    print(project_board[3] + ' | ' + project_board[4] + ' | ' + project_board[5])
+    print('-- --- ---')
+    print(project_board[6] + ' | ' + project_board[7] + ' | ' + project_board[8])
     print('\n')
 
 def setplayer():

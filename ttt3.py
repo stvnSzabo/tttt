@@ -1,16 +1,15 @@
 project_board = ['1','2','3','4','5','6','7','8','9']
 
 
-
 def printboard():
     print('\n'*2)
-    print('-- --- ---')
-    print( project_board[0] + ' | ' + project_board[1] + ' | ' + project_board[2])
-    print('-- --- ---')
-    print( project_board[3] + ' | ' + project_board[4] + ' | ' + project_board[5])
-    print('-- --- ---')
-    print( project_board[6] + ' | ' + project_board[7] + ' | ' + project_board[8])
-    print('-- --- ---')
+    print(' -------------')
+    print( ' | ' + project_board[0] + ' | ' + project_board[1] + ' | ' + project_board[2] + ' | ')
+    print(' -------------')
+    print( ' | ' +  project_board[3] + ' | ' + project_board[4] + ' | ' + project_board[5] + ' | ')
+    print(' -------------')
+    print( ' | ' +  project_board[6] + ' | ' + project_board[7] + ' | ' + project_board[8] + ' | ')
+    print(' -------------')
     print('\n')
 
 
@@ -31,6 +30,16 @@ def setplayer():
 
 
 player1,player2 = setplayer()
+
+print('\n'*2)
+print(' -------------')
+print( ' | ' + project_board[0] + ' | ' + project_board[1] + ' | ' + project_board[2] + ' | ')
+print(' -------------')
+print( ' | ' +  project_board[3] + ' | ' + project_board[4] + ' | ' + project_board[5] + ' | ')
+print(' -------------')
+print( ' | ' +  project_board[6] + ' | ' + project_board[7] + ' | ' + project_board[8] + ' | ')
+print(' -------------')
+print('\n')
 
 
 

@@ -153,15 +153,9 @@ end = datetime.datetime.now()
 elapsed = end - start
 print('Elapsed time: ', str(datetime.timedelta(seconds=elapsed.seconds)) ,'s') 
 
-def add():
-    input_file=open("name.txt","a")#this opens up the file 
-    name=input("enter your username: ")#this input asks the user to enter their username
-    score=input("enter your score: ")#this is another input that asks user for their score
-    print(name,file=input_file)
-    print(score,file=input_file)#it prints out the users name and is the commas and speech marks is what is also going to print before the score number is going to print
-    input_file.close()
 
-add()
+
+
 def restart_program():
     python = sys.executable
     os.execl(python, python, * sys.argv)

@@ -31,11 +31,15 @@ def printboard():
     print( ' | ' +  project_board[6] + ' | ' + project_board[7] + ' | ' + project_board[8] + ' | ')
     print(' -------------')
     print('\n')
+
 while True:
     try:
-        gamemode = int(input("Select mode: (1)PVP, (2) VS AI"))
+        gamemode = int(input("Select mode: (1)PVP, (2) VS AI "))
         break
-    except ValueError:
+        if gamemode != 1 and gamemode != 2:
+            print('fasz')
+        break
+    except ValueError or gamemode > 2:
             print('''⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣤⡀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀
@@ -77,8 +81,11 @@ def game2():
 
         if project_board[0] == 1 or project_board[1] == 2 or project_board[2] == 3 or project_board[3]==4 or project_board[4] ==   5 or project_board[5]==6 or project_board[6]==7 or project_board[7]==8 or project_board[8]==9 :
             return False
-        else:
-            print ('Oops, game is a draw... Try Again?')
+        
+        elif '1' not in project_board and '2' not in project_board and '3' not in project_board and '4' not in project_board and '5' not in project_board and '6' not in project_board and '7' not in project_board and '8' not in project_board and '9' not in project_board:
+            print('TIE')
+            return True
+
         printboard()
     
  

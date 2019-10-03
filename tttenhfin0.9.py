@@ -38,12 +38,10 @@ def printboard():
 
 while True:
     try:
-        gamemode = int(input("Select mode: (1)PVP, (2) VS AI "))
+        gamemode = int(input("Select mode: (1)PvP, (2) VS AI "))
         break
-        if gamemode != 1 and gamemode != 2:
-            print('fasz')
-        break
-    except ValueError or gamemode > 2:
+        
+    except ValueError:
             print('''⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣤⡀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀
@@ -57,6 +55,8 @@ while True:
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣧⡔⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠟⠁⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ Ah shit, here we go again.''')
             continue
+
+    
 def game2():
     
     def checkLine(char, spot1, spot2, spot3):
